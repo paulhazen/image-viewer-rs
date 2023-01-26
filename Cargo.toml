@@ -1,0 +1,25 @@
+[package]
+name = "image-viewer"
+version = "0.1.0"
+authors = ["Paul Hazen <paul.hazen@digipen.edu>"]
+edition = "2021"
+
+[dependencies]
+image = "0.24.4"
+libmath = "*"
+eframe = { git = "https://github.com/paulhazen/egui"}
+egui_extras = { git = "https://github.com/paulhazen/egui", features = ["image"] }
+rfd = "0.10"
+rand = "0.8.5"
+palette = "*"
+strum = "0.24"
+strum_macros = "0.24"
+byteorder = "1.4.3"
+half = "2.1.0"
+sysinfo = "*"
+rustfft = "6.1.0"
+fft2d = "*"
+nalgebra = "*"
+
+[profile.release]
+debug = true
